@@ -41,7 +41,7 @@ h1, h2 {
   background-color: #fff;
   box-shadow: 0 1px 3px rgba(0,0,0,0.08);
   transition: transform 0.2s;
-  text-decoration: none; /* For Link component */
+  text-decoration: none; 
   color: inherit;
 }
 
@@ -87,7 +87,7 @@ h1, h2 {
 
 .form-group input[type="text"],
 .form-group textarea {
-  width: calc(100% - 22px); /* Account for padding and border */
+  width: calc(100% - 22px); 
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -136,6 +136,6 @@ button:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
   .post-list {
-    grid-template-columns: 1fr; /* Single column on smaller screens */
+    grid-template-columns: 1fr; 
   }
 }

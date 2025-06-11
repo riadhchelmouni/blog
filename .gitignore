@@ -1,0 +1,21 @@
+# Python / Django
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.sqlite3
+media/ # We serve this in dev, but usually don't track large user uploads in git
+staticfiles/ # Generated static files
+
+# Node / React
+node_modules/
+build/
+.env
+.DS_Store
+
+# IDEs
+.idea/
+.vscode/
+
+# Logs
+*.log

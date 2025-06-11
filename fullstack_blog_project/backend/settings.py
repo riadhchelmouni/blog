@@ -122,20 +122,13 @@ USE_TZ = True
 STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-# Media files (for user-uploaded content)
-MEDIA_URL = '/media/' # URL path for media files
-MEDIA_ROOT = BASE_DIR.parent / 'post_images' # <--- This is correct for your structure
 
-# Default primary key field type
-# https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR.parent / 'post_images' 
+
+
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# CORS settings (add these if they're not there, or uncomment/correct them)
 CORS_ALLOW_ALL_ORIGINS = True 
 
-# If you prefer to be explicit, comment out CORS_ALLOW_ALL_ORIGINS and use:
-# CORS_ALLOWED_ORIGINS = [
-#     "http://localhost:3000", # Your React app's development URL
-#     "http://127.0.0.1:3000",
-# ]

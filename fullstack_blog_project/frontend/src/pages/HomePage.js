@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import PostCard from '../components/PostCard';
 
-const API_BASE_URL = 'http://127.0.0.1:8000'; // Your Django backend URL
+const API_BASE_URL = 'http://127.0.0.1:8000'; 
 
 function HomePage() {
   const [posts, setPosts] = useState([]);

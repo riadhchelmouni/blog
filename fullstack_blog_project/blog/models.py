@@ -14,4 +14,4 @@ class Post(models.Model):
         return self.title
 
     class Meta:
-        ordering = ['-created_at'] # Order posts by creation date, newest first
+        ordering = ['-created_at'] 

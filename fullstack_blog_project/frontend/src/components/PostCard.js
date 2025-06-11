@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const API_BASE_URL = 'http://127.0.0.1:8000'; // <--- ENSURE THIS MATCHES YOUR DJANGO SERVER URL
+const API_BASE_URL = 'http://127.0.0.1:8000'; 
 
 function PostCard({ post }) {
   const summary = post.content.substring(0, 100) + (post.content.length > 100 ? '...' : '');

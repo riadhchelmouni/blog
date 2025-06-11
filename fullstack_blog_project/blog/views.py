@@ -11,4 +11,4 @@ class PostListCreateView(generics.ListCreateAPIView):
 class PostDetailView(generics.RetrieveAPIView):
     queryset = Post.objects.all()
     serializer_class = PostSerializer
-    lookup_field = 'pk' # By default, it uses 'pk' (primary key)
+    lookup_field = 'pk' 

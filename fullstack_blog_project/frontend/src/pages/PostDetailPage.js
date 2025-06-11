@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import axios from 'axios';
 
-const API_BASE_URL = 'http://127.0.0.1:8000'; // Your Django backend URL
+const API_BASE_URL = 'http://127.0.0.1:8000'; 
 
 function PostDetailPage() {
   const { id } = useParams(); // Get the post ID from the URL

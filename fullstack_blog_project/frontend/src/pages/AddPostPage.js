@@ -1,24 +1,24 @@
 // frontend/src/pages/AddPostPage.js
-import React, { useState } from 'react'; // Corrected line
+import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate, Link } from 'react-router-dom';
 
-const API_BASE_URL = 'http://127.0.0.1:8000'; // Your Django backend URL
+const API_BASE_URL = 'http://127.0.0.1:8000'; 
 
 function AddPostPage() {
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
-  const [image, setImage] = useState(null); // State to hold the selected image file
-  const [message, setMessage] = useState(''); // For success/error messages
+  const [image, setImage] = useState(null); 
+  const [message, setMessage] = useState(''); 
   const [loading, setLoading] = useState(false);
-  const navigate = useNavigate(); // Hook for navigation
+  const navigate = useNavigate(); 
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
     setMessage('');
 
-    const formData = new FormData(); // Use FormData for file uploads
+    const formData = new FormData(); 
     formData.append('title', title);
     formData.append('content', content);
     if (image) {
@@ -92,7 +92,7 @@ function AddPostPage() {
             type="file"
             id="image"
             accept="image/*"
-            onChange={(e) => setImage(e.target.files[0])} // Store the file object
+            onChange={(e) => setImage(e.target.files[0])} 
             disabled={loading}
           />
         </div>
